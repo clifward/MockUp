@@ -1,0 +1,21 @@
+body {
+  background-color: #eeeeee;
+}
+
+li {
+  background-color: #FFF;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  color: #241f31fe;
+}
