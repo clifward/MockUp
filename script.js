@@ -39,12 +39,18 @@ function formatMessages(msgs) {
 
 // console.log(formatMessages(msgs))
 
-document.getElementById('messages').innerHTML = (formatMessages(msgs));
+function update(msgsArr) {
+  document.getElementById('messages').innerHTML = (formatMessages(msgsArr));
+}
+
+update(msgs);
+
 
 document.getElementById('send').onclick = function(e){
   const content = document.getElementById('newmessage').value
   msgs.push({
     "msg": content,
   })
-  document.getElementById('messages').innerHTML = (formatMessages(msgs));
+  update(msgs);
+  document.getElementById('newmessage').value = "";
 }
